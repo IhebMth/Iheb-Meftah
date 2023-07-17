@@ -1,0 +1,74 @@
+.home-page
+{
+    position: relative;
+    background-color: var(--color-black);
+    padding-top: 120px;
+}
+
+.home
+{
+    padding-bottom: 100px;
+}
+.home-page .links
+{
+    margin-right: 60px;
+}
+.home-page .links a
+{
+   color: white;
+}
+
+
+.home-page .links a:hover
+{
+    color: var(--color-purple);
+}
+.home-page .introduction span
+{
+    color: var(--color-purple);
+    transition: 0.5s all ease-in-out;
+   
+}
+
+.iheb-img
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-left: 3px solid var(--color-purple);
+    box-shadow: 0 1px 3px var(--color-purple);
+    border-radius: 50%;
+    animation: borderAnimation 3s infinite;
+    
+}
+
+@keyframes borderAnimation {
+    0% {
+      border-left-color: var(--color-purple);
+    }
+    50% {
+      border-left-color: transparent;
+    }
+    100% {
+      border-left-color: var(--color-purple);
+    }
+  }
+.waterShape img {
+    position: absolute;
+    bottom: 0;
+
+  }
+  
+
+  
+
+
+
+@media (max-width: 620px)
+{
+  .home-image
+  {
+    display: none;
+  }
+}

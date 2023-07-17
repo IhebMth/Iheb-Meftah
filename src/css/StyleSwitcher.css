@@ -1,0 +1,135 @@
+.style-switcher{
+    position: fixed;
+    top: 50px;
+    right: -40px;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid #d9d9ee;
+    background-color: var(--color-primary-color);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.5 ease;
+    transform: translateX(100%);
+    cursor: pointer;
+    margin-bottom: 80px;
+    z-index: 1000;
+}
+
+/* .style-switcher .style-switcher-toggler:hover
+{
+    transform: scale(1.1);
+} */
+
+.style-switcher.open 
+{
+    transform:  translate(-45px, 45px);
+}
+
+
+.style-switcher.open .s-icon
+{
+    margin-right: -30px;
+    margin-top: 10px;
+    transition: 0;
+}
+.style-switcher .s-icon 
+{
+    position: absolute;
+    right: 120%;
+    
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--color-primary-color);
+    padding: 5px;
+    color: var(--color-purple);
+    margin-right: 40px;  
+      cursor: pointer;
+    border-radius: 50%;
+}
+
+.style-switcher .s-icon:hover
+{
+    transform: scale(1.1) ;
+    
+}
+
+.style-switcher .s-icon i 
+{
+    line-height: 40px;
+}
+
+.style-switcher .style-switcher-toggler
+{
+    top: 0;
+}
+
+.s-icon.spin {
+    animation: spin 2s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+.style-switcher h4 
+{
+    margin:  10 0 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.style-switcher .colors
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.style-switcher .colors span
+{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(69, 64, 30);
+}
+
+.style-switcher .color1 
+{
+    background: #9600bf;
+}
+
+.style-switcher .color2
+{
+    background: var(--color-red);
+}
+.style-switcher .color3 
+{
+    background: var(--color-brown);
+}
+.style-switcher .color4 
+{
+    background: var(--color-green);
+}
+.style-switcher .color5 
+{
+    background: var(--color-blue);
+}
+
+@media (max-width: 991px)
+{
+    .style-switcher .s-icon 
+    {
+        margin-right: 20px;
+    }
+}

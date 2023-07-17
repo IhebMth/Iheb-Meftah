@@ -1,0 +1,173 @@
+.contact-title
+{
+    color: var(--color-purple);
+}
+
+.contact-page .description
+{
+    text-transform: uppercase;
+}
+
+.contact-icons .icon
+{
+    color: var(--color-purple);
+}
+
+.contact-icons a
+{
+  text-decoration: none;
+  color: var(--color-primary-color);
+}
+
+.contact .contactForm 
+{
+  margin-left: 3%;
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 100px);
+    margin-top: -50px;
+    justify-content: space-between;
+}
+
+.contact .contactForm .left-side
+{
+
+
+}
+
+
+
+
+
+.contactForm h2
+{
+  color: var(--color-purple);
+  font-weight: 600;
+}
+
+.contactForm .inputBox
+{
+    width: 100%;
+  position: relative;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    text-indent: 7px;
+  width: 350px;
+  padding: 2px 0;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 2px solid var(--color-purple);
+  outline: none;
+  resize: none;
+
+}
+
+.contactForm .inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  margin: 17px 0;
+  pointer-events:  none;
+  transition: 0.5s;
+  color: #666;
+  text-indent: 20px;
+
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color:var(--color-purple);
+  transform: translateY(-25px);
+  font-weight: 800;
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: fit-content;
+  background-color: var(--color-purple);
+  border: none;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  margin-left: 25%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.7s;
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .contact .contactForm
+    {
+      transform: translate(34%, 0%);
+
+    }
+   
+    .right-side .contact-section img
+    {
+        display: none;
+    }
+}
+
+
+@media (max-width: 780px)
+{
+  .contact .contactForm
+    {
+      transform: translate(30%, 0%);
+
+    }
+  
+}
+
+@media (max-width: 640px)
+{
+  .contact .contactForm
+    {
+      transform: translate(20%, 0%);
+
+    }
+  
+}
+
+@media (max-width: 560px)
+{
+  .contact .contactForm
+    {
+      transform: translate(10%, 0%);
+
+    }
+  
+}
+
+@media (max-width: 460px)
+{
+  .contact .contactForm
+    {
+      transform: translate(3%, 0%);
+
+    }
+  
+}

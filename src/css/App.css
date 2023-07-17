@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+:root {
+  --font-color: #1c1c1b;
+  --background-color: #d9d9ee;
+  /* --background-color-2: #d9d9ee; */
+  --color-primary-color: #1c1c1b;
+  --color-black: #131921;
+  --color-dark-grey: #3b4149; 
+ 
+  --color-light: #ededed;
+  --color-grey: #777777;
+ 
+  --color-purple: #9600bf;
+  --color-red: #d50e0e;
+  --color-brown : #bc5311;
+  --color-green : rgb(41, 137, 1);
+  --color-blue: rgb(63, 77, 236);
+
+ 
+  
+  --box-shadow : #0000001a;
+  }
+
+ 
+html,
+body,
+#root,
+.content
+{
+  height: 100%;
+  width: 100%;
+font-family: 'Source Sans 3', sans-serif;
+background-color: var(--background-color);
+color: var(--font-color);
+}
+
+
+[data-theme="dark"] {
+  --font-color: white;
+  --background-color: #131921;
+  /* --background-color-2: white; */
+  --box-shadow: var(--color-purple);
+}
+.App
+{
+  position: relative;
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track
+{
+
+  background-color: #e0e0e0;
+}
+
+/*  Handle */
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #888;
+}
+
+/*  Handle on hover */
+
+::-webkit-scrollbar-track:hover
+{
+  background-color: #555;
+}
+
+
+.home-wrapper-2 
+{
+  background-color: var(--color-black);
+  
+ 
+}
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--font-color);
+  
+}
+
+
+.form-control:focus
+{
+  box-shadow:  none;
+  border-color: inherit;
+}
+
+.gap-5
+{
+  gap: 5px;
+}
+.gap-10
+{
+  gap: 10px;
+}
+
+.gap-15
+{
+  gap: 15px;
+}
+
+.gap-30
+{
+  gap: 30px;
+}
+
+.box-shadow
+{
+  box-shadow: 0 0 10px var(--box-shadow);
+}
+.mt-40 
+{
+  margin-top: 40px;
+}
+
+.mb-40 
+{
+  margin-bottom: 40px;
+}
+
+.mb-80
+{
+  margin-bottom: 80px;
+}
+
+.button {
+  background-color: var(--color-dark-grey);
+  color: white;
+  width: fit-content;
+  padding-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  transition: 0.7s all ease-in-out;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+a
+{
+  text-decoration: none;
+  
+}
+
+.button:hover
+{
+  background-color: var(--color-purple);
+  color: white;
+  transform: scale(1.1);
+}
+
+.button2
+{
+  background-color: var(--color-purple);
+  color: white;
+  
+}
+
+ .button2:hover
+{
+  background-color: var(--color-dark-grey);
+  color: white;
+}
